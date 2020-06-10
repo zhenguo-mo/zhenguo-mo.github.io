@@ -1,0 +1,166 @@
+*{
+    font-family: 'PT Sans', sans-serif;
+}
+body{
+    background-color: #252627;
+    color: #fff;
+}
+
+main{
+	margin-top: 100px;
+	margin-left: 2em;
+}
+
+nav.top-nav {
+	background-color: #181818;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	box-shadow: 0px 4px 4px #0003;
+}
+
+nav.top-nav ul{
+	list-style: none;
+	padding: 0;
+}
+
+nav.top-nav li{
+	font-family: sans-serif;
+	font-weight: bold;
+	color: #fffd;
+	margin: 5px;
+	display: inline-block;
+	padding: 2px;
+	user-select: none;
+	position:relative;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+nav.top-nav li:hover{
+	background-color: white;
+    color: black;
+}
+nav.top-nav li:active{
+	color: #fff;
+}
+
+nav.top-nav li:hover li{
+	color: #333;
+	display:block;
+	padding: 5px;
+	font-weight: 200;
+
+}
+
+h1{
+    text-align: center;
+    font: normal 40px/50px Montserrat, sans-serif;
+    /* color: #228B22; */
+    color: #fff;
+}
+h2{
+    text-align: center;
+}
+.projects{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    justify-content: center;
+}
+
+.project{
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    width: 500px;
+    height: 600px;
+    margin: 15px;
+    padding: 15px;
+    background-color: #eee;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px #0003;
+}
+.project:hover{background-color: #ddd;}
+.project:active{box-shadow:none;}
+
+.project-name{
+    font: normal 40px/50px Montserrat, sans-serif;
+    color: #228B22;
+}
+
+.project-info{
+    color: #000;
+    margin-top: 50px;
+    font-size: 1.2em;
+}
+
+.showcase{
+    max-width: 500px;
+    max-height: 300px;
+    height: auto;
+}
+
+.intro{
+    text-align: center;
+}
+
+.zhen-info{
+    font-size: 1.5em;
+    margin: 0px;
+}
+.subtitle{
+    margin: -20px;
+}
+
+.school{
+    margin: -20px;
+}
+
+.contact-info{
+    text-align: center;
+}
+.profile{
+    text-align:center;
+}
+
+.profile-card{
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    width: 500px;
+    height: 600px;
+    margin: 15px;
+    padding: 15px;
+    background-color: #eee;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px #0003;
+}
+.profile-card:hover{background-color: #ddd;}
+.profile-card:active{box-shadow:none;}
+.bio{
+    margin-top: 50px;
+    color: black;
+    text-align: left;
+    word-wrap: break-word;
+    width: auto;
+    font-size: 1.2em;
+}
+.my-pic{
+    margin:15px;
+    border-radius: 50%;
+}
+.banner{
+    margin: -15px;
+    margin-top: -8px;
+    background-color: lightgray;
+    box-shadow: 5px 5px 5px 5px#0003;
+}
