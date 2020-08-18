@@ -8,7 +8,6 @@ body{
 
 main{
 	margin-top: 100px;
-	margin-left: 2em;
 }
 
 nav.top-nav {
@@ -62,7 +61,7 @@ nav.top-nav li:hover li{
 
 h1{
     text-align: center;
-    font: normal 40px/50px Montserrat, sans-serif;
+    font: normal 30px/40px Montserrat, sans-serif;
     /* color: #228B22; */
     color: #fff;
 }
@@ -75,6 +74,8 @@ h2{
     grid-template-columns: auto auto;
     grid-template-rows: auto;
     justify-content: center;
+    position: relative;
+    margin: auto;
 }
 
 .project{
@@ -114,7 +115,7 @@ h2{
 }
 
 .zhen-info{
-    font-size: 1.5em;
+    font-size: 1.25em;
     margin: 0px;
 }
 .subtitle{
@@ -163,4 +164,91 @@ h2{
     margin-top: -8px;
     background-color: lightgray;
     box-shadow: 5px 5px 5px 5px#0003;
+}
+
+
+.projects{
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.slide-arrows{
+    height: 550px;
+    position: absolute;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    color: inherit;
+    display: flex;
+    justify-content: center;
+    height: 25%;
+    padding-top: 25%;
+    padding-bottom: 25%;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.prev{
+    width: 23%;
+}
+
+.next{
+    right: 0;
+    width: 23%;
+}
+
+.prev:hover, .next:hover{
+    background-color: rgba(0,0,0,0.8);
+}
+
+.prev:focus, .next:focus{
+    background-color: #FFF;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    justify-content: center;
+    transition: background-color 0.2s ease;
+}
+
+.active, .dot:hover{
+    background-color: #717171;
+}
+
+.fade{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1s;
+    animation-name: fade;
+    animation-duration: 1s;
+}
+
+#dots{
+    margin-top: -20px;
+    text-align: center;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }
