@@ -12,7 +12,21 @@ var mura = {
 	description: "Keras and Tensorflow programming for detection of abnormal studies in Stanford's MURA dataset."
 };
 
-var projects = [snake_neat, mura];
+var alarm = {
+	name: "Burglar Alarm",
+	image_link: "burglar_alarm.jpg",
+	out_link: "burglar_alarm.html",
+	description: "Using logic gates, diodes, and transistors to make a sound via transducer when the photoreceiver doesn't receive light from the LED."
+}
+
+var motor = {
+	name: "PID Control",
+	image_link: "motor_controller.jpg",
+	out_link: "motor_controller.html",
+	description: "Microcontroller to control motor trajectory using feedback control from rotary encoder and ADC values."
+}
+
+var projects = [snake_neat, mura, alarm, motor];
 var slide_index = 0;
 
 function createProjectCard(card, slideSelector){
