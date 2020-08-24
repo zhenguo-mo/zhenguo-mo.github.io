@@ -2,7 +2,7 @@
 <html>
     <header>
         <link rel="stylesheet" href="styles.css">
-        <script src="main.js"></script>
+        <script src="coursework.js"></script>
     </header>
     <body>
 		<nav class="top-nav">
@@ -15,6 +15,16 @@
 		</nav>
 
 		<main>
+			<h1> Courses </h1>
+			<div class="btn-group">
+				<button id="cs" class="btn-cs active" onclick="showTable(1)">Computer Science</button>
+				<button id="ee"class="btn-ee" onclick="showTable(0)">Electrical Engineering</button>
+			</div>
+			<table id="table" class="my-table">
+			</table>
 		</main>
 	</body>
+	<script>
+		showTable(1);
+	</script>
 </html>
